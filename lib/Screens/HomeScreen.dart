@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:untitled/API_Screens/Views/NewsScreen.dart';
 import 'package:untitled/Screens/ChangeColor.dart';
 import 'package:untitled/Screens/Dashoard.dart';
 
@@ -6,7 +7,6 @@ import 'FromScreen.dart';
 import 'Login.dart';
 import 'NewChallangeStateful.dart';
 import 'Profile.dart';
-import 'ScreenToTestAPI.dart';
 import 'ShoppingCards.dart';
 import 'ShowTheTextField.dart';
 import 'SwitchButton.dart';
@@ -77,10 +77,9 @@ class Homescreen extends StatelessWidget {
                   Navigator.push(context, MaterialPageRoute(builder: (context)=>SwitchbuttonPage()));
                 } , child: Text("Switch Button")),
 
-
                 ElevatedButton(onPressed:(){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>Screentotestapi()));
-                } , child: Text("API Test")),
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>Newsscreen()));
+                } , child: Text("News API")),
 
               ],
             )

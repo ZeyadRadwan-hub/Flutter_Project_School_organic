@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:untitled/API_Screens/Providers/NewsApp_Provider.dart';
 import 'package:untitled/Provider/ShoppingCards_Provider.dart';
 import 'package:untitled/Screens/HomeScreen.dart';
 import 'package:untitled/Screens/Profile.dart';
@@ -26,7 +27,7 @@ class Myapp extends StatelessWidget{
         ChangeNotifierProvider<SwithbottonProvider>(create: (context)=>SwithbottonProvider()),
         ChangeNotifierProvider<Teamspointchallengeprovider>(create: (context)=>Teamspointchallengeprovider()),
         ChangeNotifierProvider<ShoppingcardsProvider>(create: (context)=>ShoppingcardsProvider()),
-
+        ChangeNotifierProvider<NewsappProvider>(create: (context) => NewsappProvider(),)
       ],
       child: MaterialApp(
           debugShowCheckedModeBanner: false,
